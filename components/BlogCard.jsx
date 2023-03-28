@@ -13,7 +13,7 @@ export default function BlogCard() {
 			</div>
 			<div className=" absolute w-full h-full top-0 flex flex-col">
 				<div className="flex-1 "></div>
-				<div className="flex-1 flex flex-col p-10 bg-gradient-to-t from-black rounded-2xl">
+				<div className="flex-1 flex flex-col p-5  sm:p-10 bg-gradient-to-t from-black rounded-2xl">
 					<div className="flex-1"></div>
 					<div>
 						<div className="flex items-center justify-between text-gray-300">
