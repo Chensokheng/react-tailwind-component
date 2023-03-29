@@ -1,0 +1,96 @@
+import Simple from "../../components/Stats/Simple";
+import Style2 from "../../components/Stats/Style2";
+
+import { Tab, Tabs } from "nextra-theme-docs";
+import { Callout } from "nextra-theme-docs";
+
+export const Container = ({ children }) => {
+	return <div className="py-5">{children}</div>;
+};
+
+# Stats
+
+### Style 1
+
+very simple state with only text and number
+
+<Tabs items={["Preview", "Code"]}>
+	<Tab>
+		<Container>
+			<Simple />
+		</Container>
+	</Tab>
+	<Tab>
+        ```js copy 
+        import React from "react";
+
+export default function SimpleStat() {
+	return (
+		<div className=" w-full sm:w-96 bg-white shadow-sm border p-3 rounded-md">
+			<span className="text-gray-500 text-sm">Total Subscribers</span>
+			<h1 className="text-4xl font-black text-black">10,015</h1>
+		</div>
+	);
+}
+
+        ```
+    </Tab>
+
+</Tabs>
+
+### Style 2
+
+stat with percentage and numbers
+
+<Tabs items={["Preview", "Code"]}>
+	<Tab>
+		<Container>
+			<Style2 />
+		</Container>
+	</Tab>
+	<Tab>
+        ```js copy
+        import React from "react";
+
+export default function Style2() {
+	return (
+		<div className=" w-full sm:w-96 bg-white shadow-sm border p-3 rounded-md flex items-end justify-between">
+			<div>
+				<span className="text-gray-500 text-sm">Total Subscribers</span>
+				<div className="flex items-end gap-2 mt-3">
+					<h1 className="text-3xl font-black text-blue-500">
+						10,015
+					</h1>
+					<h1 className="text-gray-500 text-sm">from</h1>
+					<h1 className="text-gray-500 text-sm">90024</h1>
+				</div>
+			</div>
+			<div className="flex bg-green-200 px-2 py-1 rounded-full text-sm items-center text-gray-600">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					strokeWidth={1.5}
+					stroke="currentColor"
+					className="w-4 h-4"
+				>
+					<path
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+					/>
+				</svg>
+				13%
+			</div>
+		</div>
+	);
+}
+        ```
+    </Tab>
+
+</Tabs>
+
+<Callout type="info" emoji="📖">
+	If you change to dark mode the color might not be working properly. You
+	should customize the color base on your application theme
+</Callout>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 export default function BlogCard() {
 	return (
-		<div className="w-90 mx-auto sm:w-96 h-100 bg-black relative hover:ring-4 ring-yellow-400 rounded-2xl">
+		<div className="w-90 sm:w-96 h-100 bg-black relative hover:ring-4 ring-yellow-400 rounded-2xl">
 			<div className=" aspect-w-1 aspect-h-1 h-full relative">
 				<Image
 					alt=""
