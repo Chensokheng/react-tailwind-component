@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Logo() {
-	return <span>Daily Components</span>;
+	return <span>Daily ReactUIs</span>;
 }

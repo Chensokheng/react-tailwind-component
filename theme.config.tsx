@@ -14,13 +14,13 @@ const config: DocsThemeConfig = {
 	footer: {
 		text: (
 			<>
-				<h1>&#169;{" 2023 Daily Components by Chensokheng."}</h1>
+				<h1>&#169;{" 2023 DailyReactUIs by Chensokheng."}</h1>
 			</>
 		),
 	},
 	banner: {
 		key: "beta-release",
-		text: "🎉 Daily Components beta is released",
+		text: "🎉 Daily ReactUIs beta is released",
 	},
 	editLink: {
 		text: null,
